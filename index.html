@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap test</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="">
+        <h2>參考：</h2>
+        <a href="https://andy6804tw.github.io/2018/01/06/bootstrap-tutorial(1)/">https://andy6804tw.github.io/2018/01/06/bootstrap-tutorial(1)/</a>
+    </div>
+    <hr>
+    <div class="container" style="background-color: #aaa;">
+        <h2>Using Container</h2>
+    </div>
+    <hr>
+    <div class="container-fluid" style="background-color: #eee;">
+        <h2>Using Container-fluid</h2>
+        <ul>
+            <li>padding-left, padding-right -15px</li>
+            <li>padding左右和row互相抵消</li>
+            <li>bs3也有 .container-fluid</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="">
+        <h2>bs4 - 和３一樣有 12 columns</h2>
+        <ul>
+            <li>col 小於576px</li>
+            <li>col-sm- >=576px</li>
+            <li>col-md >=768px</li>
+            <li>col-lg >=992px</li>
+            <li>col-xl >=1200px</li>
+            <li>!! col 自動算尺寸，２個50%, 3個33.33%, etc.可以很多很多個col</li>
+            <li>col,col-6可以合用 col-6=50%,</li>
+            <li>* col-md col-md-5 cd-md 在min-width:768px只有中間設定寬41..%, 其他自動</li>
+            <li>col-md-auto 根據文字寬度，動態的調整欄寬</li>
+        </ul>
+        <hr>
+        <h2>bs3 - </h2>
+        <ul class="">
+            <li>xs (for phones - screens less than 768px wide)</li>
+            <li>sm (for tablets - screens equal to or greater than 768px wide)</li>
+            <li>md (for small laptops - screens equal to or greater than 992px wide)</li>
+            <li>lg (for laptops and desktops - screens equal to or greater than 1200px wide)</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row" style="background-color: #f1f1f1;">
+            <h2>row 的bs4 </h2>
+            <ul>
+                <li>display: -ms-flexbox;</li>
+                <li>display: flex;</li>
+                <li>-ms-flex-wrap: wrap;</li>
+                <li>flex-wrap: wrap;</li>
+                <li>margin-right: -15px;</li>
+                <li>margin-left: -15px;</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>bs4 實用標籤</h2>
+        <ul>
+            <li>mx-auto (margin-left and margin-right: auto):</li>
+            <li>.w-25, .w-50, .w-75, .w-100, .mw-100 (Width 25%, Width 50%, Width 75%, Width 100%, Max Width 100%)</li>
+            <li>.h-25, .h-50, .h-75, .h-100, .mh-100</li>
+        </ul>
+        <h2>margin or padding</h2>
+        <ul>
+            <li>0 - sets margin or padding to 0</li>
+            <li>1 - sets margin or padding to .25rem (4px if font-size is 16px)</li>
+            <li>2 - sets margin or padding to .5rem (8px if font-size is 16px)</li>
+            <li>3 - sets margin or padding to 1rem (16px if font-size is 16px)</li>
+            <li>4 - sets margin or padding to 1.5rem (24px if font-size is 16px)</li>
+            <li>5 - sets margin or padding to 3rem (48px if font-size is 16px)</li>
+            <li>x - sets both left and right</li>
+            <li>y - sets both top and bottom</li>
+        </ul>
+        <h4>SAMPLE</h4>
+        <ul>
+            <li>m-0, m-md-1, m-2, ...</li>
+            <li>mt-0, mt-md-1, mt-2, ...</li>
+            <li>mb-0, mb-md-1</li>
+            <li>ml-0,</li>
+            <li>mr-0,</li>
+            <li>mx-0, mx-md-1</li>
+            <li>my-0,</li>
+        </ul>
+        <ul>
+            <p>與row齊用, <div class="row align-self-start">
+            </p>
+            <li>align-self-start：置頂</li>
+            <li>align-self-center：置中</li>
+            <li>align-self-end：置底</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>圖image</h2>
+        <p class="">img src="paris.jpg" class="mx-auto d-block"</p>
+        <li>mx-auto</li>
+        <li>d-block</li>
+        <li>img-fluid</li>
+        <li>rounded, rounded-circle, (border-radius:.25rem, 50% )</li>
+        <li>
+            img-thumbnail
+            <pre>
+				.img-thumbnail {
+				    padding: .25rem;
+				    background-color: #fff;
+				    border: 1px solid #dee2e6;
+				    border-radius: .25rem;
+				    max-width: 100%;
+				    height: auto;
+				}
+			</pre>
+        </li>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Alert</h2>
+        <div class="alert alert-success">
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info">
+            <strong>Info!</strong> <a href="#" class="alert-link">連結變顏色</a>.
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Warning!</strong> 增加刪除區 This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <p>class="alert-dismissible fade show"一定要一起用: button type="button" class="close" data-dismiss="alert">&times; /button
+        </p>
+        <div class="alert alert-primary">
+              <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary">
+              <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark">
+              <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light">
+              <strong>Light!</strong> Light grey alert.
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-light">Light</span>
+        <span class="badge badge-dark">Dark</span>
+    </div>
+    <div class="container">
+        <span class="badge badge-pill badge-default">Default</span>
+        <span class="badge badge-pill badge-primary">Primary</span>
+        <span class="badge badge-pill badge-success">Success</span>
+        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-danger">Danger</span>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary"> Messages <span class="badge badge-light">4</span></button>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Card text</h2>
+        <div class="card">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some example text. Some example text.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer">Footer</div>
+        </div>
+        <hr><br><br>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://dummyimage.com/400x400/000/fff" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <p>Image at the bottom (card-img-bottom):</p>
+            </div>
+            <div class="col">
+                <div class="card" style="width:400px">
+                    <div class="card-body">
+                        <h4 class="card-title">Jane Doe</h4>
+                        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                    <img class="card-img-bottom" src="https://dummyimage.com/400x400/ddd/000" alt="Card image" style="width:100%">
+        		  		</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="col-md">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://dummyimage.com/400x400/ddd/000" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+        	<!-- carousel -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://dummyimage.com/1100x500/000/fff" alt="Los Angeles" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Los Angeles111</h3>
+                            <p>We had such a great time in LA!444</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/400x400/000/fff" alt="Chicago" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Chicago222</h3>
+                            <p>Thank you, Chicago!55</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/400x400/000/fff" alt="New York" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>New York333</h3>
+                            <p>We love the Big Apple!66</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/400x400/000/fff" alt="New York" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>New York444</h3>
+                            <p>We love the Big Apple!77</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    				<span class="carousel-control-prev-icon"></span>
+  				</a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+  				</a>
+            </div>
+            <!-- carousel end -->
+        </div>
+        <br>
+        <div class="container">
+        	<h2>popover</h2>
+            <P>放這邊網頁沒有反應，直接看連結</P>
+        	<a href="https://www.w3schools.com/bootstrap4/bootstrap_popover.asp">https://www.w3schools.com/bootstrap4/bootstrap_popover.asp</a>
+        </div>
+        <hr>
+        <br>
+        <div class="container">
+        	<div class="row">
+				<div class="col-md">
+                        <br>
+						<h2>* Flex</h2>
+						<p>uses flexbox, instead of floats, to handle the layout.</p>
+					<div class="d-flex p-3 bg-secondary text-white">
+						<div class="p-2 bg-info">Flex item 1</div>
+						<div class="p-2 bg-warning">Flex item 2</div>
+						<div class="p-2 bg-primary">Flex item 3</div>
+					</div>
+                    <h2>外層div.flex-container屬性：</h2>
+                        <p>display: flex; 裡面包覆的div寬度(沒有設定)，隨內容彈性長，但內文會跑出去，可以增加word-break: break-all;高度就會同時被撐高</p>
+                        <p>裡面div超出都會跑出</p>
+                        <ul>
+                            <li>flex-direction: column(直排); column-reverse(直排＋反轉); row-reverse(橫排＋反轉);</li>
+                            <li>flex-wrap: wrap; nowrap; wrap-reverse;</li>
+                            <li>flex-flow: row wrap; (合併 flex-direction , flex-wrap)</li>
+                            <li>justify-content: center; space-between; ... (置中， 左右中各自對齊，)</li>
+                            <li>align-items:center 靠左水平置中 ; flex-start 靠左水平齊上; flex-end 靠左水平齊下; stretch (default); baseline (對齊文字底線); 
+                                <br>(在flex-container裡面的div對齊方式: )</li>
+                            <li>align-content: space-between 上下撲滿 空白中間平衡; space-around 空白上中下平衡; stretch div撲滿高度(default); center 左邊中間開始對齊; flex-start 左上開始排列; flex-end; 左下開始排列
+                                <br>(裡面div排列方式)</li>
+                        </ul>
+        		</div>
+        	</div>
+            <div class="row">
+                    <div class="col-md">
+                    <h4>外層div.flex-container 範例：畫面內 div水平垂直都置中</h4>
+                    使用
+                    <ul>
+                        <li>justify-content: center;</li>
+                        <li>align-items: center;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h2>內層子div</h2>
+                        <li>order 順序</li>
+                        <li>flex-grow 滿版相對水平比例</li>
+                        <li>flex-shrink 收縮0~2</li>
+                        <li>flex-basis 指定寬度</li>
+                        <li>flex (flex-grow, flex-shrink, and flex-basis)
+                            <br>範例：flex:0 0 30%;</li>
+                        <li>align-self 內容對齊，影響高度</li>
+                        <br><br>
+                        <p>在row內會受flex:1;影響佈滿高度，需在col裡面</p>
+                        <a href="#" class="btn btn-info" role="button">Link Button</a>
+<button type="button" class="btn btn-info">Button</button>
+<input type="button" class="btn btn-info" value="Input Button">
+<input type="submit" class="btn btn-info" value="Submit Button">
+<a href="https://www.w3schools.com/bootstrap4/bootstrap_flex.asp" class="btn btn-primary">-W3c bs4 flex link-</a>
+                </div>
+                <br>
+                <br>
+                <a href="https://www.w3schools.com/bootstrap4/bootstrap_flex.asp" class="btn btn-primary">-W3c bs4 flex link-</a>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col">
+                    <p style="margin-bottom:8px"><strong>提醒：IE8-9 support, use Bootstrap 3.</strong> It is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to it.</p>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md" style="width: 100%; height:50px; background-color: #aaa;color:#fff; font-size: 20px; text-align: center; margin-top: 100px; padding2%;">
+                     Footer
+                </div>
+            </div>
+        </div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
